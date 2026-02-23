@@ -59,11 +59,30 @@ label{
 
 input{
  width:100%;
+ box-sizing:border-box;
  padding:12px;
  margin-top:5px;
  font-size:16px;
  border-radius:8px;
  border:1px solid #ccc;
+}
+
+
+select{
+ width:100%;
+ box-sizing:border-box;
+ padding:12px;
+ margin-top:5px;
+ font-size:16px;
+ border-radius:8px;
+ border:1px solid #ccc;
+ background:#fff;
+}
+
+.hint{
+ margin:8px 0 0;
+ font-size:0.9rem;
+ color:#555;
 }
 
 
