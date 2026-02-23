@@ -8,9 +8,7 @@
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header class="site-header">
   <h1>残業代計算ツール</h1>
   <p class="lead">時給と時間を入力するだけで、残業代・深夜手当・休日手当を簡単に試算できます。</p>
@@ -18,7 +16,6 @@
 
 <main>
   <div class="box">
-
     <label for="mode">計算モード</label>
     <select id="mode">
       <option value="parttime">アルバイト向け</option>
@@ -26,22 +23,21 @@
     </select>
     <p class="hint">※ 社会人向けは、通常賃金に上乗せされる「割増分」を目安として計算します。</p>
 
-    <label>時給（円）</label>
+    <label for="hourly">時給（円）</label>
     <input id="hourly" type="number" placeholder="例：1200">
 
-    <label>残業時間</label>
+    <label for="overtime">残業時間</label>
     <input id="overtime" type="number" placeholder="例：10">
 
-    <label>深夜時間</label>
+    <label for="night">深夜時間</label>
     <input id="night" type="number" placeholder="例：5">
 
-    <label>休日時間</label>
+    <label for="holiday">休日時間</label>
     <input id="holiday" type="number" placeholder="例：2">
 
     <button onclick="calc()">計算する</button>
 
     <div id="result"></div>
-
   </div>
 
   <section class="content-section" aria-labelledby="guide-links">
@@ -55,7 +51,7 @@
 </main>
 
 <footer class="site-footer">
-  <p><a href="../">トップに戻る</a> / <a href="index.html">残業代計算ツール</a></p>
+  <p><a href="../">トップに戻る</a></p>
 </footer>
 
 <script src="calc.js"></script>
