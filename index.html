@@ -2,15 +2,30 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>残業代計算ツール｜無料で即時計算</title>
-<meta name="description" content="残業代・深夜手当・休日出勤を自動計算できる無料ツール。登録不要・スマホ対応。">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="style.css">
+<title>無料Webアプリ集</title>
+<meta name="description" content="仕事や日常に役立つ無料Webアプリをまとめたポータルページです。">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#f5f6fa;color:#111;padding:20px}
+.container{max-width:920px;margin:0 auto}
+h1{margin:0 0 8px}
+.lead{margin:0 0 20px;color:#444}
+.app-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.app-card{display:block;background:#fff;border:1px solid #e6e6e6;border-radius:12px;padding:16px;text-decoration:none;color:inherit;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.app-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.1)}
+.app-card h2{font-size:1.05rem;margin:0 0 6px}
+.app-card p{margin:0;color:#555;line-height:1.5}
+@media (max-width:600px){body{padding:14px}}
+</style>
 </head>
-
 <body>
+  <main class="container">
+    <h1>無料Webアプリ集</h1>
+    <p class="lead">ブラウザですぐ使える便利なツールをまとめています。必要なアプリを選んでご利用ください。</p>
 
+<<<<<<< HEAD
 <header class="site-header">
   <h1>残業代計算ツール</h1>
   <p class="lead">時給と時間を入力するだけで、残業代・深夜手当・休日手当を簡単に試算できます。</p>
@@ -59,5 +74,14 @@
 </footer>
 
 <script src="calc.js"></script>
+=======
+    <section class="app-grid" aria-label="アプリ一覧">
+      <a class="app-card" href="./overtime/">
+        <h2>残業代計算ツール</h2>
+        <p>時給と時間を入力して、残業代・深夜手当・休日手当（または割増分）を簡単に計算できます。</p>
+      </a>
+    </section>
+  </main>
+>>>>>>> 3b152a8bf1fa66a409a1e25b2264d56d88148cd5
 </body>
 </html>
