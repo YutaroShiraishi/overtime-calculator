@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>残業代計算ツール｜無料で即時計算</title>
+<meta name="description" content="残業代・深夜手当・休日出勤を自動計算できる無料ツール。登録不要・スマホ対応。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>残業代計算ツール</h1>
+
+<div class="box">
+
+<label>時給（円）</label>
+<input id="hourly" type="number" placeholder="例：1200">
+
+<label>残業時間</label>
+<input id="overtime" type="number" placeholder="例：10">
+
+<label>深夜時間</label>
+<input id="night" type="number" placeholder="例：5">
+
+<label>休日時間</label>
+<input id="holiday" type="number" placeholder="例：2">
+
+<button onclick="calc()">計算する</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="calc.js"></script>
+</body>
+</html>
