@@ -25,7 +25,6 @@ h1{margin:0 0 8px}
     <h1>無料Webアプリ集</h1>
     <p class="lead">ブラウザですぐ使える便利なツールをまとめています。必要なアプリを選んでご利用ください。</p>
 
-<<<<<<< HEAD
 <header class="site-header">
   <h1>残業代計算ツール</h1>
   <p class="lead">時給と時間を入力するだけで、残業代・深夜手当・休日手当を簡単に試算できます。</p>
@@ -74,7 +73,6 @@ h1{margin:0 0 8px}
 </footer>
 
 <script src="calc.js"></script>
-=======
     <section class="app-grid" aria-label="アプリ一覧">
       <a class="app-card" href="./overtime/">
         <h2>残業代計算ツール</h2>
@@ -82,6 +80,60 @@ h1{margin:0 0 8px}
       </a>
     </section>
   </main>
->>>>>>> 3b152a8bf1fa66a409a1e25b2264d56d88148cd5
+  <header class="site-header">
+    <h1>残業代計算ツール</h1>
+    <p class="lead">時給と時間を入力するだけで、残業代・深夜手当・休日手当を簡単に試算できます。</p>
+  </header>
+
+  <main>
+    <div class="box">
+      <label for="mode">計算モード</label>
+      <select id="mode">
+        <option value="parttime">アルバイト向け</option>
+        <option value="employee">社会人向け</option>
+      </select>
+      <p class="hint">
+        ※ 社会人向けは、通常賃金に上乗せされる「割増分」を目安として計算します。
+      </p>
+
+      <label>時給（円）</label>
+      <input id="hourly" type="number" placeholder="例：1200">
+
+      <label>残業時間</label>
+      <input id="overtime" type="number" placeholder="例：10">
+
+      <label>深夜時間</label>
+      <input id="night" type="number" placeholder="例：5">
+
+      <label>休日時間</label>
+      <input id="holiday" type="number" placeholder="例：2">
+
+      <button onclick="calc()">計算する</button>
+
+      <div id="result"></div>
+    </div>
+
+    <section class="content-section" aria-labelledby="guide-links">
+      <h2 id="guide-links">残業代の基礎知識</h2>
+      <p>計算式の考え方や、よくある疑問をまとめた記事も用意しています。制度理解にもご活用ください。</p>
+      <ul class="link-list">
+        <li><a href="overtime-guide.html">残業代の計算方法ガイド</a></li>
+        <li><a href="overtime-faq.html">残業代のよくある質問（FAQ）</a></li>
+      </ul>
+    </section>
+
+    <section class="app-grid" aria-label="アプリ一覧">
+      <a class="app-card" href="./overtime/">
+        <h2>残業代計算ツール</h2>
+        <p>時給と時間を入力して、残業代・深夜手当・休日手当（または割増分）を簡単に計算できます。</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">残業代計算ツール トップ</a></p>
+  </footer>
+
+  <script src="calc.js"></script>
 </body>
 </html>
